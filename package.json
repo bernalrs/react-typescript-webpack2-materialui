@@ -1,0 +1,73 @@
+{
+    "name": "react-typescript-webpack2",
+    "version": "1.0.0",
+    "description": "Starter project that combines ReactJS TypeScript Webpack2 Jest",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --config webpack.common.config.js --bail",
+        "test": "node --harmony node_modules/.bin/jest --coverage",
+        "tslint": "tslint './src/**/*.ts*'",
+        "start": "webpack-dev-server --config webpack.common.config"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bernalrs/react-typescript-webpack2.git"
+    },
+    "keywords": [
+        "webpack2",
+        "reactjs",
+        "TypeScript",
+        "Jest",
+        "javascript",
+        "starter",
+        "project"
+    ],
+    "author": "Remi Bernal",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bernalrs/react-typescript-webpack2/issues"
+    },
+    "homepage": "https://github.com/bernalrs/react-typescript-webpack2#readme",
+    "devDependencies": {
+        "@types/node": "^7.0.8",
+        "@types/react": "^15.0.16",
+        "@types/react-addons-test-utils": "^0.14.17",
+        "@types/react-dom": "^0.14.23",
+        "awesome-typescript-loader": "^3.1.2",
+        "css-loader": "^0.27.3",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^19.0.2",
+        "postcss-loader": "^1.3.3",
+        "react-addons-test-utils": "^15.4.2",
+        "react-test-renderer": "^15.4.2",
+        "style-loader": "^0.14.1",
+        "ts-jest": "^19.0.1",
+        "tslint": "^4.5.1",
+        "typescript": "^2.2.1",
+        "webpack": "^2.2.1",
+        "webpack-dev-server": "^2.4.2"
+    },
+    "dependencies": {
+        "@types/material-ui": "^0.16.59",
+        "material-ui": "^0.17.1",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2"
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js"
+        ],
+        "moduleNameMapper": {
+            "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+            "\\.(css|less)$": "identity-obj-proxy"
+        },
+        "transform": {
+            "\\.(ts|tsx|js)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
+        "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js",
+        "cacheDirectory": "<rootDir>/node_modules/.cache/jest"
+    }
+}
